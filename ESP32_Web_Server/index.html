@@ -1,0 +1,57 @@
+<!--  https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ -->
+
+<!--App web permettant le contrôle à distance de la vibration dans un env local -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vibra Urti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="normalizer.css.css">
+</head>
+<body>
+    <div class="topnav">
+        <h1>Doc'ticare</h1>
+    </div>
+<div class="container_flex">  
+    <div class="content">
+
+    <!--Gestion_1-->
+
+        <div class="card-grid">
+            <div class="card">
+                <p class="card-title">Vibreur 1</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider1" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">Fréquence: <span id="sliderValue1"></span><strong> PWM</strong></p>
+            </div>
+
+        <!--Gestion_2
+            <div class="card">
+                <p class="card-title">Vibreur 2</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider2" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">Fréquence: <span id="sliderValue2"></span><strong> PWM</strong></p>
+            </div>-->
+
+        <!--Gestion_3
+            <div class="card">
+                <p class="card-title"> Vibreur 1</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider3" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">Fréquence: <span id="sliderValue3"></span><strong> PWM</strong></p>
+            </div>
+        </div>-->
+
+
+    </div>
+<h6>HackingHealth 2022 - Besançon</h6>
+</div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
